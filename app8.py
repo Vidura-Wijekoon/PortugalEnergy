@@ -32,8 +32,8 @@ default_coordinates = [0, 0]  # replace with suitable values
 
 def load_data():
     # Load the data
-    df = pd.read_excel(r"D:\Python\streamlit_env\Scripts\energy_demand_306 (1).xlsx")
-    df2 = pd.read_csv(r"D:\Python\streamlit_env\Scripts\cleaned_data.csv")
+    df = pd.read_excel(r"energy_demand_306 (1).xlsx")
+    df2 = pd.read_csv(r"cleaned_data.csv")
 
     # Handle null values
     df2["commissioning_year"] = df2['commissioning_year'].replace(np.nan, df2["commissioning_year"].median())
